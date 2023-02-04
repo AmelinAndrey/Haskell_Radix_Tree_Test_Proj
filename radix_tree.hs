@@ -174,8 +174,22 @@ mainList = [("abc", Just 1), ("bac", Just 2), ("alfa", Just 3), ("omega", Just 4
 
 main = do
     putStr $ show (initTree mainList startNode)
-    --putStr ("123" ++ "->" ++ "\n" ++ "12")
-    --putStr $ show (initTree mainList startNode)
-    --putStr $ show (wakeupneo (initTree mainList startNode)) 
-    --putStr $ show (lengthTree ("",initTree mainList startNode))
-    
+    putStr "\n" 
+    putStr ("                                            !!!!!!!!!!!!!!!!!!!!                                                                  " ++ "\n")
+    putStr $ show $ addTree ("antiguagua", Just 5) (initTree mainList startNode)
+    putStr "\n"
+    putStr ("                                            !!!!!!!!!!!!!!!!!!!!                                                                  " ++ "\n")
+    putStr $ show $ find "alfa" (initTree mainList startNode)
+    putStr "\n"
+    putStr ("                                            !!!!!!!!!!!!!!!!!!!!                                                                  " ++ "\n")
+    putStr $ show $ delete "alfa" (addTree ("antiguagua", Just 5) (initTree mainList startNode))
+    putStr "\n"
+    putStr ("                                            !!!!!!!!!!!!!!!!!!!!                                                                  " ++ "\n")
+    putStr $ show $ find "alfa" (delete "alfa" (addTree ("antiguagua", Just 5) (initTree mainList startNode)))
+    putStr "\n"
+    putStr "4erez svertku \n"
+    putStr $ show $ svertka mainList
+    putStr "\n"
+    putStr "4erez foldl \n"
+    putStr $ show $ lsvertka mainList
+    putStr "\n\n Est problema s otstupami, no eto 4isto arefmeti4eskaya problema, proect delal 2 mesyaca nazad, t9gelo isprvit problemu za ve4er(("
